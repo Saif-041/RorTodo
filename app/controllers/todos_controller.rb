@@ -10,12 +10,26 @@ class TodosController < ApplicationController
             flash[:notice] = "Todo created successfully!"            
             redirect_to todo_path(@todo)
         else
-            render 'new', status: 301
+            render 'new', status: 500
         end
     end
 
     def show
         @todo = Todo.find(params[:id])
+    end
+
+    def edit
+        @todo = Todo.find(params[:id])
+    end
+
+    def update
+        @todo = Todo.find(params[:id])
+        if @todo.update(todo_params)
+            flash[:notice] = "Todo Updated successfully."
+            redirect_to todo_path(@todo)
+        else
+            render 'edit', status: 404
+        end
     end
 
     private

@@ -2788,3 +2788,334 @@ Processing by TodosController#new as HTML
 Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3456)
 
 
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:33:58 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3199)
+Completed 200 OK in 10ms (Views: 8.5ms | Allocations: 3469)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:01 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 989)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3193)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 3463)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:02 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3181)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 3451)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:02 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 974)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3178)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 3448)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:03 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 995)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3199)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 3469)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:03 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3202)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 3472)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:34:03 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3187)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 3457)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:43:16 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 18.9ms | Allocations: 3609)
+  Rendered layout layouts/application.html.erb (Duration: 96.2ms | Allocations: 38584)
+Completed 200 OK in 129ms (Views: 101.4ms | ActiveRecord: 1.9ms | Allocations: 46412)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:43:17 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1165)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3491)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 3844)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-21 19:43:18 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3185)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 3466)
+
+
+Started GET "/todos/55" for 127.0.0.1 at 2023-03-21 19:57:32 +0500
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 170)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 14442)
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 19866)
+
+
+Started GET "/todos/55/edit" for 127.0.0.1 at 2023-03-21 19:57:37 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1461)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3657)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4512)
+
+
+Started PATCH "/todos/55" for 127.0.0.1 at 2023-03-21 20:03:58 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"abrar dev", "description"=>"Ruby on Rails "}, "commit"=>"Update Todo", "id"=>"55"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTodo Update (0.3ms)[0m  [1m[33mUPDATE "todos" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["name", "abrar dev"], ["description", "Ruby on Rails "], ["updated_at", "2023-03-21 15:03:59.015696"], ["id", 55]]
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/todos/55
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms | Allocations: 7005)
+
+
+Started GET "/todos/55" for 127.0.0.1 at 2023-03-21 20:03:59 +0500
+Processing by TodosController#show as TURBO_STREAM
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 14533)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.1ms | Allocations: 15962)
+
+
+Started GET "/todos/55/edit" for 127.0.0.1 at 2023-03-21 20:04:04 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1528)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3725)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4597)
+
+
+Started PATCH "/todos/55" for 127.0.0.1 at 2023-03-21 20:04:13 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"Abrar", "description"=>"Ruby on Rails "}, "commit"=>"Update Todo", "id"=>"55"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTodo Update (0.3ms)[0m  [1m[33mUPDATE "todos" SET "name" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["name", "Abrar"], ["updated_at", "2023-03-21 15:04:13.012487"], ["id", 55]]
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/todos/55
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms | Allocations: 2830)
+
+
+Started GET "/todos/55" for 127.0.0.1 at 2023-03-21 20:04:13 +0500
+Processing by TodosController#show as TURBO_STREAM
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2399)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 3133)
+
+
+Started GET "/todos/55/edit" for 127.0.0.1 at 2023-03-21 20:04:21 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1080)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3276)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 4010)
+
+
+Started GET "/todos/56/edit" for 127.0.0.1 at 2023-03-21 20:04:24 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1059)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3255)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3982)
+
+
+Started GET "/todos/54/edit" for 127.0.0.1 at 2023-03-21 20:04:31 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1059)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3255)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 3982)
+
+
+Started GET "/todos/53/edit" for 127.0.0.1 at 2023-03-21 20:04:35 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1065)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3261)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 3988)
+
+
+Started PATCH "/todos/53" for 127.0.0.1 at 2023-03-21 20:04:57 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"", "description"=>"cdjojsvods"}, "commit"=>"Update Todo", "id"=>"53"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1930)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4126)
+Completed 404 Not Found in 11ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5965)
+
+
+Started PATCH "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:03 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"", "description"=>""}, "commit"=>"Update Todo", "id"=>"53"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2802)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4998)
+Completed 404 Not Found in 24ms (Views: 13.8ms | ActiveRecord: 0.4ms | Allocations: 6777)
+
+
+Started PATCH "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:08 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>".", "description"=>"/"}, "commit"=>"Update Todo", "id"=>"53"}
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTodo Update (0.5ms)[0m  [1m[33mUPDATE "todos" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["name", "."], ["description", "/"], ["updated_at", "2023-03-21 15:05:08.663326"], ["id", 53]]
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/todos/53
+Completed 302 Found in 19ms (ActiveRecord: 3.2ms | Allocations: 2723)
+
+
+Started GET "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:08 +0500
+Processing by TodosController#show as TURBO_STREAM
+  Parameters: {"id"=>"53"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2396)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3128)
+
+
+Started GET "/todos/53/edit" for 127.0.0.1 at 2023-03-21 20:05:13 +0500
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1071)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3267)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 3994)
+
+
+Started PATCH "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:20 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"", "description"=>""}, "commit"=>"Update Todo", "id"=>"53"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/edit.html.erb within layouts/application
+  Rendered todos/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2779)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4975)
+Completed 404 Not Found in 13ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 6766)
+
+
+Started PATCH "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:41 +0500
+Processing by TodosController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"Day 2", "description"=>"VisNext S.S"}, "commit"=>"Update Todo", "id"=>"53"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTodo Update (0.3ms)[0m  [1m[33mUPDATE "todos" SET "name" = ?, "description" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["name", "Day 2"], ["description", "VisNext S.S"], ["updated_at", "2023-03-21 15:05:41.179493"], ["id", 53]]
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/todos/53
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms | Allocations: 2717)
+
+
+Started GET "/todos/53" for 127.0.0.1 at 2023-03-21 20:05:41 +0500
+Processing by TodosController#show as TURBO_STREAM
+  Parameters: {"id"=>"53"}
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:18:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todos/show.html.erb within layouts/application
+  Rendered todos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2381)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 3113)
+
+
