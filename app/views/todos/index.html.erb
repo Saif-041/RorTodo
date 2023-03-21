@@ -30,6 +30,10 @@
             <td>
                 <%= link_to "Show", todo_path(todo) %>
             </td>
+            <td>
+                <%#= link_to "Delete", todo_path(todo), method: :delete %>
+                <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete }, class: "btn btn-danger ml-3" %>
+            </td>
         </tr>
     <% end %>
 </table>
@@ -46,6 +50,8 @@
             Description: <%= todo.description %>
             <%= link_to "Edit", edit_todo_path(todo) %>
             <%= link_to "Show", todo_path(todo) %>
+            <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete }, class: "btn btn-danger ml-3" %>
+            <%#= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %>
         </li>
         <hr>
     <% end %>
