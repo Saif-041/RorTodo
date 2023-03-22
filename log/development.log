@@ -5882,3 +5882,183 @@ Processing by TodosController#index as TURBO_STREAM
 Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 10547)
 
 
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 15:45:43 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 10.9ms | Allocations: 3538)
+  Rendered todos/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 4018)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 172)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 40427)
+Completed 200 OK in 87ms (Views: 73.0ms | ActiveRecord: 0.6ms | Allocations: 48270)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-22 15:46:19 +0500
+Processing by TodosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"Day 4 ", "description"=>"Here I am testing my todo creation"}, "commit"=>"Create Todo"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1852)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f57d6297450>
+
+        binding.pry
+               ^^^^
+Did you mean?  try):
+  
+app/controllers/todos_controller.rb:20:in `create'
+Started GET "/todos" for 127.0.0.1 at 2023-03-22 15:48:44 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 23.4ms | Allocations: 11531)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 48123)
+Completed 200 OK in 106ms (Views: 98.2ms | ActiveRecord: 1.1ms | Allocations: 51968)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 15:48:46 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 5.6ms | Allocations: 3219)
+  Rendered todos/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3463)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 7278)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 7756)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-22 15:49:02 +0500
+Processing by TodosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"Day 4", "description"=>"Her ei am testing todo creation"}, "commit"=>"Create Todo"}
+Completed 500 Internal Server Error in 265248ms (ActiveRecord: 0.0ms | Allocations: 47408)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass
+
+        if @todo.save
+                ^^^^^):
+  
+app/controllers/todos_controller.rb:21:in `create'
+Started GET "/todos/" for 127.0.0.1 at 2023-03-22 15:54:10 +0500
+Processing by TodosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.5ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 8355)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 23738)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 1.3ms | Allocations: 25199)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 15:54:26 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 2.2ms | Allocations: 1358)
+  Rendered todos/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1432)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 16421)
+Completed 200 OK in 25ms (Views: 20.3ms | ActiveRecord: 0.6ms | Allocations: 19525)
+
+
+Started GET "/todos/" for 127.0.0.1 at 2023-03-22 15:58:25 +0500
+Processing by TodosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 8336)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 23722)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 1.0ms | Allocations: 25159)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 15:58:27 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 6.3ms | Allocations: 1909)
+  Rendered todos/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1974)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2053)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2321)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+            @virtual_path = "todos/_form";; if @todo.errors.any? 
+                                                    ^^^^^^^):
+    1: <% if @todo.errors.any? %>
+    2: 
+    3:     <h2>The following errors prevented the todo from being saved.</h2>
+    4: 
+  
+app/views/todos/_form.html.erb:1
+app/views/todos/new.html.erb:3
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 15:59:12 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 2.1ms | Allocations: 1416)
+  Rendered todos/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1658)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1743)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2523)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    12: 
+    13: <% end %>
+    14: 
+    15: <%= form_for @todo do |f| %>
+    16:     <p>
+    17:         <%= f.label :name%>
+    18:         <br>
+  
+app/views/todos/_form.html.erb:15
+app/views/todos/new.html.erb:3
+Started GET "/todos" for 127.0.0.1 at 2023-03-22 16:00:02 +0500
+Processing by TodosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 8869)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 24636)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 1.6ms | Allocations: 26410)
+
+
+Started GET "/todos/new" for 127.0.0.1 at 2023-03-22 16:00:03 +0500
+Processing by TodosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/new.html.erb within layouts/application
+  Rendered todos/_form.html.erb (Duration: 5.2ms | Allocations: 1518)
+  Rendered todos/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1721)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 5397)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 5764)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-22 16:00:17 +0500
+Processing by TodosController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "todo"=>{"name"=>"Day 3", "description"=>"testing creation of todo"}, "commit"=>"Create Todo"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ (pry):17:in `create'
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Day 3"], ["description", "testing creation of todo"], ["created_at", "2023-03-22 11:02:27.980746"], ["updated_at", "2023-03-22 11:02:27.980746"]]
+  ↳ (pry):17:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ (pry):17:in `create'
+  [1m[36mTodo Load (0.6ms)[0m  [1m[34mSELECT "todos".* FROM "todos" ORDER BY "todos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (pry):18:in `create'
+Redirected to http://127.0.0.1:3000/todos/58
+Completed 302 Found in 364531ms (ActiveRecord: 4.9ms | Allocations: 130560)
+
+
