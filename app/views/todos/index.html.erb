@@ -5,7 +5,41 @@
 <p>
     <%= link_to "Wanna add new Todo?", new_todo_path %>
 </p>
+
 <br>
+
+<ol>
+    <% @todos.each do |todo| %>
+        
+        <hr>
+
+        <li value=<%= todo.id %> >
+            ID: <%= todo.id %>
+            <br>
+            Name: <%= todo.name %>
+            <br>
+            Description: <%= todo.description %>           
+            <span class="links">
+                <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete }, class: "btn btn-danger ml-3" %>
+                <%#= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %>
+            </span>
+            <span class="links">
+                <%= link_to "Edit", edit_todo_path(todo) %>
+            </span>
+            <span class="links">
+                <%= link_to "Show", todo_path(todo) %>
+            </span>
+        </li>
+            <%# Created at: <%= todo.created_at %>
+            <%# <br> %>
+            <%# Updated at: <%= todo.updated_at %>
+    <% end %>
+</ol>
+
+
+<hr>
+<hr>
+
 
 <table>
     <tr>
@@ -37,22 +71,3 @@
         </tr>
     <% end %>
 </table>
-
-
-<hr>
-<hr>
-
-<ol>
-    <% @todos.each do |todo| %>
-        <li>
-            Name: <%= todo.name %>
-            <br>
-            Description: <%= todo.description %>
-            <%= link_to "Edit", edit_todo_path(todo) %>
-            <%= link_to "Show", todo_path(todo) %>
-            <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete }, class: "btn btn-danger ml-3" %>
-            <%#= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %>
-        </li>
-        <hr>
-    <% end %>
-</ol>

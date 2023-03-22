@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+ ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+    margin-bottom: 0.77em;
+  }
+  li::before {
+    display: inline-block;
+    content: counter(item) ") ";
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
+  }
+  .links{
+    width: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    float: right;
+    padding: 0px 10px;
+    word-wrap: normal;
+    /* display: inline-block; */
+  }
