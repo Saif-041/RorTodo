@@ -5811,3 +5811,74 @@ Processing by TodosController#index as HTML
 Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.6ms | Allocations: 11820)
 
 
+Started GET "/todos" for 127.0.0.1 at 2023-03-22 14:20:11 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 12080)
+  Rendered layouts/_messages.html.erb (Duration: 0.6ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 128.1ms | Allocations: 54213)
+Completed 200 OK in 144ms (Views: 130.9ms | ActiveRecord: 1.0ms | Allocations: 58057)
+
+
+Started DELETE "/todos/5" for 127.0.0.1 at 2023-03-22 14:20:23 +0500
+Processing by TodosController#destroy as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:51:in `find_todo'
+  [1m[36mCACHE Todo Load (0.0ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+  [1m[36mTodo Destroy (0.8ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/todos
+Completed 302 Found in 20ms (ActiveRecord: 5.1ms | Allocations: 5121)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-22 14:20:23 +0500
+Processing by TodosController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 6667)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 10797)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.3ms | Allocations: 11166)
+
+
+Started DELETE "/todos/36" for 127.0.0.1 at 2023-03-22 14:20:43 +0500
+Processing by TodosController#destroy as TURBO_STREAM
+  Parameters: {"id"=>"36"}
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:51:in `find_todo'
+  [1m[36mCACHE Todo Load (0.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+  [1m[36mTodo Destroy (0.3ms)[0m  [1m[31mDELETE FROM "todos" WHERE "todos"."id" = ?[0m  [["id", 36]]
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/todos
+Completed 302 Found in 15ms (ActiveRecord: 2.9ms | Allocations: 2773)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-22 14:20:43 +0500
+Processing by TodosController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering todos/index.html.erb within layouts/application
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos"[0m
+  ↳ app/views/todos/index.html.erb:12
+  Rendered todos/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 6358)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 10269)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 10547)
+
+
