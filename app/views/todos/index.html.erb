@@ -21,7 +21,6 @@
             Description: <%= todo.description %>           
             <span class="links">
                 <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-danger ml-3" %>
-                <%#= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %>
             </span>
             <span class="links">
                 <%= link_to "Edit", edit_todo_path(todo) %>
@@ -35,39 +34,3 @@
             <%# Updated at: <%= todo.updated_at %>
     <% end %>
 </ol>
-
-
-<hr>
-<hr>
-
-
-<table>
-    <tr>
-        <th>
-            Name
-        </th>
-        <th>
-            Description
-        </th>
-    </tr>
-    <% @todos.each do |todo| %>
-        <tr>
-            <td>
-                <%= todo.name %>
-            </td>
-            <td>
-                <%= todo.description %>
-            </td>
-            <td>
-                <%= link_to "Edit", edit_todo_path(todo) %>
-            </td>
-            <td>
-                <%= link_to "Show", todo_path(todo) %>
-            </td>
-            <td>
-                <%#= link_to "Delete", todo_path(todo), method: :delete %>
-                <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-danger ml-3" %>
-            </td>
-        </tr>
-    <% end %>
-</table>
