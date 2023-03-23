@@ -20,7 +20,11 @@
             <br>
             Name: <%= todo.name %>
             <br>
-            Description: <%= todo.description %>           
+            Description: <%= todo.description %>
+            <% if todo.user.present? %>
+                <br>
+                User: <%= todo.user.name %>
+            <% end %>       
             <span class="links">
                 <%= link_to ('Delete'), todo_path(todo), data: { "turbo-method": :delete, turbo_confirm: "Are you sure?" }, class: "btn btn-danger ml-3" %>
             </span>

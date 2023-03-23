@@ -8,5 +8,11 @@
     Description: <%= @todo.description %>
 </p>
 
+<% if @todo.user.present? %>
+    <p>
+        User: <%= @todo.user.name %>
+    </p>
+<% end %>
+
 <%= link_to "Edit this Todo", edit_todo_path(@todo) %> |
 <%= link_to "Back to Todo's List", todos_path %>

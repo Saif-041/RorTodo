@@ -3,6 +3,7 @@ class TodosController < ApplicationController
 
     def new
         @todo = Todo.new
+        @user = User.all
     end
 
     def index
@@ -53,7 +54,7 @@ class TodosController < ApplicationController
     end
 
     def todo_params
-        params.require(:todo).permit(:name, :description)
+        params.require(:todo).permit(:name, :description, :user_id)
     end
 
 end
