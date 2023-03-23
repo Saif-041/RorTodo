@@ -26,6 +26,12 @@
     </p>
 
     <p>
+        <%= f.label :user_id%>
+        <br>
+        <%= f.select :user_id, User.all.ids, selected: User.last.id %>
+    </p>
+
+    <p>
         <%= f.submit %>
     </p>
 
